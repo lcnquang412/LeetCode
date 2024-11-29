@@ -142,3 +142,9 @@ minimum-index-sum-of-two-lists      String
 # - Medium
 add-two-numbers                     Linked List
 longest-palindromic-substring       DP + Manacher
+zigzag-conversion               Loop + String
+reverse-integer                 String
+string-to-integer-atoi          String
+container-with-most-water       Array
+integer-to-roman                Integer
+3sum                            Hash
