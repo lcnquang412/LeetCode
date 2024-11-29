@@ -1,0 +1,144 @@
+# Bash
+valid-phone-numbers                 grep Regex
+tenth-line                          sed
+
+# MySQL
+combine-two-tables                  LEFT JOIN
+employees-earning-more-than-their-managers              LEFT JOIN (Itself)
+duplicate-emails                    GROUP BY / HAVING + COUNT
+customers-who-never-order           LEFT JOIN
+delete-duplicate-emails             DELETE + FROM A a1, A a2
+rising-temperature                  DATE(DATE_ADD)
+game-play-analysis-i                GROUP BY
+employee-bonus                      LEFT JOIN
+find-customer-referee               SELECT
+customer-placing-the-largest-number-of-orders           LEFT JOIN multiple layer
+big-countries                       SELECT
+classes-more-than-5-students        COUNT
+
+# Code
+# - Easy
+countSubIslands                     DFS
+twoSum                              Hash
+palindromeNumber                    BF
+romanToInt                          BF
+longestCommonPrefix                 BF
+validParentheses                    Stack
+mergeTwoSortedLists                 Linked List
+removeDuplicatesFromSortedArray     Array - Queue is not good
+removeElement                       Array
+findTheIndexOfSubString             SubString
+searchInsertPosition                Binary Search
+lengthOfLastWord                    String
+plusOne                             Array
+addBinary                           Array
+sqrt                                Binary Search
+climbingStairs                      BF - Loop
+removeDupFromSortedLL               Linked List
+mergeSortedArray                    Array
+binaryTreeInorderTraversal          Linked List + Binary Tree + Recursive (InOrder)
+sameTree                            Linked List + Binary Tree + Stack
+symmetricTree                       Linked List + Binary Tree + Recursive DFS / Loop
+maxDepthOfBinTree                   Linked List + Binary Tree
+convertSortedArrayToBTS *           Linked List + Binary Tree + Recursive
+balanced-binary-tree                Linked List + Binary Tree + Recursive
+minimum-depth-of-binary-tree        Linked List + Binary Tree + Recursive
+path-sum                            Linked List + Binary Tree + Recursive
+pascals-triangle                    Array
+pascals-triangle-ii                 Array
+best-time-to-buy-and-sell-stock     Array
+valid-palindrome                    String
+single-number                       Hash
+linked-list-cycle                   Linked List + Two Pointers (Step2/Step1)
+binary-tree-preorder-traversal      Linked List + Binary Tree + Recursive
+binary-tree-postorder-traversal     Linked List + Binary Tree + Recursive
+intersection-of-two-linked-lists    Linked List + Two Pointer (Step1/Step1)
+excel-sheet-column-title            Recursive + Divide & Modulo
+excel-sheet-column-number           Multiply
+majority-element                    Hash / Boyer-Moore Majority Voting Algorithm (note.txt)
+majority-element-ii                 Boyer-Moore Majority Voting Algorithm (Custom) (note.txt)
+most-frequent-even-element          Hash
+reverse-bits                        Binary
+number-of-1-bits                    Bitwise
+house-robber                        DP
+happy-number                        Hash + Recursive
+remove-linked-list-elements         Linked List
+isomorphic-strings                  Hash
+reverse-linked-list                 Linked List
+contains-duplicate                  Hash
+contains-duplicate-ii               Hash
+count-complete-tree-nodes           Linked List + Binary Tree
+implement-stack-using-queues        Stack
+invert-binary-tree                  Linked List + Binary Tree
+summary-ranges                      Array
+power-of-two                        Integer
+implement-queue-using-stacks        Queue
+palindrome-linked-list              Linked List
+valid-anagram                       String + Anagram
+binary-tree-paths                   Binary Tree + Recursive
+add-digits                          Integer + String Recursive / Digital Root (123 = 1 + 2 + 3 = 6)
+missing-number                      Array
+first-bad-version                   Binary Search
+move-zeroes                         Array
+word-pattern                        Hash
+nim-game                            Math: Modulo
+range-sum-query-immutable           Array
+power-of-three                      Math: Log log-b-(a) = c <=> b ^ c = a
+power-of-four                       Math: Log
+counting-bits                       Array + Shift / bin function (Count bit 1 of integer)
+reverse-string                      Array
+reverse-vowels-of-a-string          Array
+top-k-frequent-elements             Array + Hash + sorted list of dict
+intersection-of-two-arrays          Array
+intersection-of-two-arrays-ii       Array
+valid-perfect-square                Array
+guess-number-higher-or-lower        Binary Search + Recursive
+ransom-note                         Array + Hash
+first-unique-character-in-a-string  String + Hash
+find-the-difference                 String
+binary-watch                        Binary
+sum-of-left-leaves                  Binary Tree
+convert-a-number-to-hexadecimal     Binary + Two's Complement (inverse + 1 bit)
+longest-palindrome                  Hash
+fizz-buzz                           Array
+third-maximum-number                Array
+add-strings                         Array
+number-of-segments-in-a-string      Binary Search
+find-all-numbers-disappeared-in-an-array                    Array + filter function
+assign-cookies                      Array
+repeated-substring-pattern          String + Clever String Manipulation (note.txt)
+hamming-distance                    Bit
+island-perimeter                    Array
+number-complement                   Bit
+license-key-formatting              String
+max-consecutive-ones                Array
+construct-the-rectangle             Array + Prime
+teemo-attacking                     Array
+next-greater-element-i              Array + Hash
+keyboard-row                        String
+find-mode-in-binary-search-tree     BST
+base-7                              div + mod
+relative-ranks                      Array
+perfect-number                      Divisors
+fibonacci-number                    Array
+detect-capital                      String
+longest-uncommon-subsequence-i      String (misunderstanding)
+minimum-absolute-difference-in-bst  BST
+reverse-string-ii                   String
+diameter-of-binary-tree             BT
+longest-substring-without-repeating-characters                  String
+reverse-words-in-a-string-iii       String
+maximum-depth-of-n-ary-tree         N-ary Tree
+array-partition                     Array
+binary-tree-tilt                    BT
+reshape-the-matrix                  Array
+subtree-of-another-tree             BT
+distribute-candies                  Array + set
+n-ary-tree-preorder-traversal       N-ary Tree
+n-ary-tree-postorder-traversal      N-ary Tree
+longest-harmonious-subsequence      Array + Hash
+range-addition-ii                   Loop
+minimum-index-sum-of-two-lists      String
+# - Medium
+add-two-numbers                     Linked List
+longest-palindromic-substring       DP + Manacher
