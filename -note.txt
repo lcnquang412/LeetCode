@@ -12,3 +12,10 @@ Algorithm:
 - The Boyer-Moore Majority Vote Algorithm: is an efficient algorithm used to find the majority element (an element that appears more than half of the time) in a given array. This algorithm operates in linear time and requires O(1) additional space. It means that the remaining elements other than this would definitely be less than N/2
 
 - Clever String Manipulation: A string s can be constructed by repeating a substring, then concatenating two copies of s together and removing the first and last character would still contain s as a substring
+
+- Permutation (with duplicate): https://www.geeksforgeeks.org/print-all-permutations-of-a-string-with-duplicates-allowed-in-input-string/
+
+- Next Permutation Algorithm:
+    + Find break point (i) which first a[i] < a[i+1] from backward.
+    + Find index j which smallest and greater than a[i] from right half.
+    + Reverse right half

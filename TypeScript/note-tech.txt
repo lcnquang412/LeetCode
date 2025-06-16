@@ -1,0 +1,36 @@
+*** HashMap ***
+const map = new Map<string, number>();
+map.set("apple", 3);
+map.set("banana", 5);
+
+// 🔁 Loop through key-value pairs
+for (const [key, value] of map) {
+  console.log(`${key} → ${value}`);
+}
+
+// 🔁 Loop keys only
+for (const key of map.keys()) {
+  console.log("key:", key);
+}
+
+// 🔁 Loop values only
+for (const value of map.values()) {
+  console.log("value:", value);
+}
+
+*** Loop ***
+- loop..of => value
+- loop..in => key, index
+
+*** Shape ***
+- area of triangle with 3 points on 2D:
+(1/2) * abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 -y2))
+
+*** Array ***
+- Init array 1D with length and value
+let a: number[] = new Array(length).fill(value);
+
+- Init array 2D with row, col and value
+let result: number[][] = Array.from({ length: row }, () =>
+  Array.from({ length: col }, () => value)
+);

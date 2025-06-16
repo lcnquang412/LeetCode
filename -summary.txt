@@ -147,4 +147,12 @@ reverse-integer                 String
 string-to-integer-atoi          String
 container-with-most-water       Array
 integer-to-roman                Integer
-3sum                            Hash
+3sum                            Array - 2 Points
+3sum-closest                    Array - 2 Points
+letter-combinations-of-a-phone-number                           Recursive
+4sum                            kSum
+remove-nth-node-from-end-of-list                                Linked List + Recursive
+generate-parentheses            Stack
+swap-nodes-in-pairs             Linked List
+divide-two-integer              Plus + Pow operator
+next-permutation                Next Permutation Algorithm

@@ -1,59 +1,103 @@
+import math
+
+
+def printArr2Dim(arr):
+    for i in range(len(arr)):
+        print('\n')
+        print(arr[i])
+
+
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         length = len(s)
-        if length <= numRows or numRows == 1:
+        if length < numRows or numRows == 1:
             return s
-
-        i = 0
-        step = 0
-        resultMatrix = [[] for _ in range(length)]
-        for char in s:
-            resultMatrix[i].append(char)
-            if i == 0:
-                step = 1
-            elif i == numRows - 1:
-                step = -1
-            i += step
-
         result = ''
-        for i in range(len(resultMatrix)):
-            result += ''.join(resultMatrix[i])
+        if numRows == 2:
+            index = 0
+            subResult = ''
+            for char in s:
+                if index % 2 == 1:
+                    subResult += char
+                else:
+                    result += char
+                index += 1
+            return result + subResult
+        mid = numRows - 2
+        numCols = math.ceil((length - numRows) / (numRows + mid)) * (mid + 1) + 1
+        table = [['' for _ in range(numCols)] for _ in range(numRows)]
+        i = 0
+        j = 0
+        isMainCol = True
+        for char in s:
+            table[i][j] = char
+            if isMainCol:
+                i += 1
+                if i == numRows:
+                    j += 1
+                    i -= 2
+                    isMainCol = False
+            else:
+                i -= 1
+                if i == 0:
+                    j += 1
+                    i = 0
+                    isMainCol = True
+        # printArr2Dim(table)
+
+        for i in range(numRows):
+            result += ''.join(table[i])
         return result
 
 
 a = 'PAYPALISHIRING'
 b = 3
+a = 'PAYPALISHIRING'
+b = 4
+a = 'A'
+b = 1
+a = 'ABCDE'
+b = 2
 solution = Solution()
 print(solution.convert(a, b))
 
-# O(n) -> 11ms
-#         length = len(s)
-#         if length < numRows or numRows == 1:
-#             return s
+# BF: 264
+# length = len(s)
+# if length < numRows or numRows == 1:
+#     return s
+# result = ''
+# if numRows == 2:
+#     index = 0
+#     subResult = ''
+#     for char in s:
+#         if index % 2 == 1:
+#             subResult += char
+#         else:
+#             result += char
+#         index += 1
+#     return result + subResult
+# mid = numRows - 2
+# numCols = math.ceil((length - numRows) / (numRows + mid)) * (mid + 1) + 1
+# table = [['' for _ in range(numCols)] for _ in range(numRows)]
+# i = 0
+# j = 0
+# isMainCol = True
+# for char in s:
+#     table[i][j] = char
+#     if isMainCol:
+#         i += 1
+#         if i == numRows:
+#             j += 1
+#             i -= 2
+#             isMainCol = False
+#     else:
+#         i -= 1
+#         if i == 0:
+#             j += 1
+#             i = 0
+#             isMainCol = True
+# # printArr2Dim(table)
 #
-#         result = []
-#
-#         def appendResult(i: int):
-#             j = 0
-#             while True:
-#                 step = 2 * (numRows - 1) * j
-#                 # Left
-#                 candidateIndex = i + step
-#
-#                 if candidateIndex > length - 1:
-#                     break
-#                 else:
-#                     result.append(s[candidateIndex])
-#                 # Right
-#                 if 0 < i < numRows - 1:
-#                     candidateIndex = i + 2 * (numRows - i - 1) + step
-#                     if candidateIndex > length - 1:
-#                         break
-#                     else:
-#                         result.append(s[candidateIndex])
-#                 j += 1
-#
-#         for i in range(numRows):
-#             appendResult(i)
-#
-#         return ''.join(result)
+# for i in range(numRows):
+#     result += ''.join(table[i])
+# return result
