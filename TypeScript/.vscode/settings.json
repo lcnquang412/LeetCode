@@ -1,7 +1,8 @@
 {
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "editor.insertSpaces": false // false = use tabs, true = use spaces
+  "editor.insertSpaces": false,
+  "cSpell.words": ["nums"] // false = use tabs, true = use spaces
 
   // Prettier specific
   // "prettier.tabWidth": 4,

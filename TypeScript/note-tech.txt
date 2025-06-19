@@ -18,6 +18,10 @@ for (const value of map.values()) {
   console.log("value:", value);
 }
 
+*** HashMap (Set) from an array ***
+const array: number[] = {1,1,2},
+  set = new Set(array);
+
 *** Loop ***
 - loop..of => value
 - loop..in => key, index
@@ -34,3 +38,22 @@ let a: number[] = new Array(length).fill(value);
 let result: number[][] = Array.from({ length: row }, () =>
   Array.from({ length: col }, () => value)
 );
+
+- Init array 2D with row, col
+let result: number[][] = Array.from({ length: row }, () =>
+  new Array(col)
+);
+
+*** a[i] swap a[j] ***
+[a[i], a[j]] = [a[j], a[i]]
+
+*** Transpose Matrix (square only) ***
+1   (2)   (3)
+4   5     (6)
+7   8     9
+
+for (let i = 0; i< n; i++) {
+  for (let j = i + 1; j< n; j++){
+    [matrix[i][j], mat[j][i]] = [mat[j][i], mat[i][j]]
+  }
+}

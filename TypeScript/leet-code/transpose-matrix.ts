@@ -1,29 +1,27 @@
 {
   function transpose(matrix: number[][]): number[][] {
-    // const row = matrix.length,
-    //   col = matrix[0].length,
-    //   result: number[][] = Array.from({ length: col }, () =>
-    //     Array.from({ length: row }, () => 0)
-    //   );
-
-    // for (let i = 0; i < col; i++) {
-    //   for (let j = 0; j < row; j++) {
-    //     result[i][j] = matrix[j][i];
-    //   }
-    // }
-
     const row = matrix.length,
       col = matrix[0].length;
+    if (row !== col) {
+      let result: number[][] = Array.from(
+        { length: col },
+        () => new Array(row)
+      );
 
-    for (let i = 0; i < row; i++) {
-      for (let j = 0; j < col; j++) {
-        const tmp: number = matrix[i][j];
-        matrix[i][j] = matrix[i][j];
-        matrix[i][j] = tmp;
+      for (let i = 0; i < col; i++) {
+        for (let j = 0; j < row; j++) {
+          result[i][j] = matrix[j][i];
+        }
       }
+      return result;
+    } else {
+      for (let i = 0; i < row; i++) {
+        for (let j = i + 1; j < row; j++) {
+          [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
+        }
+      }
+      return matrix;
     }
-
-    return matrix;
   }
 
   let a: any[] = [
