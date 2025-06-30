@@ -1,4 +1,4 @@
-*** HashMap ***
+=== HashMap ===
 const map = new Map<string, number>();
 map.set("apple", 3);
 map.set("banana", 5);
@@ -18,19 +18,24 @@ for (const value of map.values()) {
   console.log("value:", value);
 }
 
-*** HashMap (Set) from an array ***
+=== HashMap (Set) from an array ===
 const array: number[] = {1,1,2},
   set = new Set(array);
 
-*** Loop ***
+=== Loop ===
 - loop..of => value
 - loop..in => key, index
 
-*** Shape ***
+=== Shape ===
 - area of triangle with 3 points on 2D:
 (1/2) * abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 -y2))
 
-*** Array ***
+- 3 edges is triangle
+a + b > c
+a + c > b
+b + c > a
+
+=== Array ===
 - Init array 1D with length and value
 let a: number[] = new Array(length).fill(value);
 
@@ -48,10 +53,10 @@ let result: number[][] = Array.from({ length: row }, () =>
 let a = [1, 2, 3]
 Math.max(...a)
 
-*** a[i] swap a[j] ***
+=== a[i] swap a[j] ===
 [a[i], a[j]] = [a[j], a[i]]
 
-*** Transpose Matrix (square only) ***
+=== Transpose Matrix (square only) ===
 1   (2)   (3)
 4   5     (6)
 7   8     9
@@ -62,6 +67,9 @@ for (let i = 0; i< n; i++) {
   }
 }
 
-*** TypeScript ***
+=== TypeScript ===
 - Set: new Set<T>()
 - Map: new Map<T, T>()
+
+=== Sort ===
+array.sort((a, b) => a - b) ==> Ascending
