@@ -53,6 +53,11 @@ let result: number[][] = Array.from({ length: row }, () =>
 let a = [1, 2, 3]
 Math.max(...a)
 
+- Add element to first position
+cosnt a = 0,
+  array = [1, 2, 3]
+array.unshift(a)
+
 === a[i] swap a[j] ===
 [a[i], a[j]] = [a[j], a[i]]
 
