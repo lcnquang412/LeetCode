@@ -18,6 +18,8 @@ for (const value of map.values()) {
   console.log("value:", value);
 }
 
+// Map.get(...) => O(n)
+
 === HashMap (Set) from an array ===
 const array: number[] = {1,1,2},
   set = new Set(array);

@@ -3,15 +3,19 @@
     if (trust.length === 0) {
       return n === 1 ? 1 : -1;
     }
-    const map: Map<number, number> = new Map<number, number>();
-    for (let t of trust) {
-      map.set(t[0], (map.get(t[0]) || 0) - 1);
-      map.set(t[1], (map.get(t[1]) || 0) + 1);
+    const map: { [key: number]: number } = {};
+    for (let i = 1; i <= n; i++) {
+      map[i] = 0;
     }
 
-    for (const [key, value] of map) {
-      if (value === n - 1) {
-        return key;
+    for (let t of trust) {
+      map[t[0]] -= 1;
+      map[t[1]] += 1;
+    }
+
+    for (let key in map) {
+      if (map[key] === n - 1) {
+        return parseInt(key);
       }
     }
 
