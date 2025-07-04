@@ -1,51 +1,28 @@
 {
   function commonChars(words: string[]): string[] {
-    let result: { [key: string]: number } = {},
-      resultTmp: { [key: string]: number } = {},
-      count = 0,
-      countTmp = 0;
-    for (let char of words[0]) {
-      if (result[char]) {
-        result[char] += 1;
-        // count++;
-      } else {
-        result[char] = 1;
-        // count++;
-      }
-    }
+    let freqMin = new Array(26).fill(Infinity),
+      distance: number = "a".charCodeAt(0);
 
-    for (let i = 1; i < words.length; i++) {
-      const word: string = words[i];
-      resultTmp = {};
-      countTmp = 0;
+    for (let word of words) {
+      let freqTmp = new Array(26).fill(0);
       for (let char of word) {
-        if (result[char]) {
-          if (resultTmp[char]) {
-            if (resultTmp[char] < result[char]) {
-              resultTmp[char] += 1;
-              // countTmp++;
-            }
-          } else {
-            resultTmp[char] = 1;
-            // countTmp++;
-          }
-        }
-        // if (countTmp === count) {
-        //   break;
-        // }
+        freqTmp[char.charCodeAt(0) - distance]++;
       }
-      result = resultTmp;
-      // count = countTmp;
+      for (let i = 0; i < 26; i++) {
+        freqMin[i] = Math.min(freqMin[i], freqTmp[i]);
+      }
     }
 
-    const resultFinal: string[] = [];
-    for (let key in result) {
-      const value: number = result[key];
-      for (let i = 0; i < value; i++) {
-        resultFinal.push(key);
+    let result: string[] = [];
+    for (let i = 0; i < 26; i++) {
+      if (freqMin[i] != 0) {
+        while (freqMin[i]-- > 0) {
+          result.push(String.fromCharCode(i + distance));
+        }
       }
     }
-    return resultFinal;
+
+    return result;
   }
 
   let a: any[] = [

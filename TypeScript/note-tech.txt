@@ -60,6 +60,10 @@ cosnt a = 0,
   array = [1, 2, 3]
 array.unshift(a)
 
+- Sum:
+const numbers = [1, 2, 3],
+  sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+
 === a[i] swap a[j] ===
 [a[i], a[j]] = [a[j], a[i]]
 
