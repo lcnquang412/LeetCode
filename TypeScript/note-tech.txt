@@ -32,6 +32,9 @@ const array: number[] = {1,1,2},
 - area of triangle with 3 points on 2D:
 (1/2) * abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 -y2))
 
+- 3 points on 2D is not in line (or area = 0)
+x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 -y2) === 0
+
 - 3 edges is triangle
 a + b > c
 a + c > b
@@ -63,6 +66,9 @@ array.unshift(a)
 - Sum:
 const numbers = [1, 2, 3],
   sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+
+- Remove element
+array.splice(index, number)
 
 === a[i] swap a[j] ===
 [a[i], a[j]] = [a[j], a[i]]

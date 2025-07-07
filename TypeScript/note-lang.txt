@@ -1,3 +1,5 @@
 perimeter: chu vi
 area: diện tích
 occurrence (əˈkərəns): sự xuất hiện
+smash: đập vỡ
+distinct - adj: riêng biệt
