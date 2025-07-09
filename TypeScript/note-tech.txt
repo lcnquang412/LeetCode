@@ -70,6 +70,9 @@ const numbers = [1, 2, 3],
 - Remove element
 array.splice(index, number)
 
+- Method executes in place
+sort
+
 === a[i] swap a[j] ===
 [a[i], a[j]] = [a[j], a[i]]
 

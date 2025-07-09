@@ -1,2 +1,5 @@
 - gcd:
 	+ x-of-a-kind-in-a-deck-of-cards
+
+- Counting Sort:
+	+ relative-sort-array
