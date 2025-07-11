@@ -24,9 +24,12 @@
       "",
       "  let a: any[] = [],",
       "    b: any[] = [];",
+      "  const startTime = Date.now();",
       "  a.forEach((aElement, _index) => {",
       "    console.log(functionHere(aElement));",
       "  })",
+      "  const endTime = Date.now();",
+      "  console.log(`\\nExecution time: ${endTime - startTime} milliseconds`);",
       "}"
     ],
     "description": "Log output to console"

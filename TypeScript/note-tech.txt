@@ -99,3 +99,14 @@ array.sort((a, b) => a - b) ==> Ascending
 
 === Queue ===
 - unshift, pop
+
+=== Math ===
+- Combination (tổ hợp) => order is not important
+  nCr = n! / [r! * (n - r)!]
+
+- Permutation (chỉnh hợp) => order is important
+  nPr = n! / (n - r)!
+
+=== Compare ===
+JSON.parse(JSON.stringify(obj)) > {...obj}
+array[i] > object[i]

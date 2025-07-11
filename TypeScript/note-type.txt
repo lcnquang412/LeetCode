@@ -1,5 +1,8 @@
 - gcd:
 	+ x-of-a-kind-in-a-deck-of-cards
 
-- Counting Sort:
+- Counting Sort (Make a count-hash with original array, loop template array and push num with count-hash[num] times):
 	+ relative-sort-array
+
+- 26 alphabets array HashMap (Using char.charCodeAt(0) - 'a'.charCodeAt(0) as index)
+	+ find-words-that-can-be-formed-by-characters
