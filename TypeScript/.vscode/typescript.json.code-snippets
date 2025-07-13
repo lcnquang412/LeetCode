@@ -25,7 +25,7 @@
       "  let a: any[] = [],",
       "    b: any[] = [];",
       "  const startTime = Date.now();",
-      "  a.forEach((aElement, _index) => {",
+      "  a.forEach((aElement, _i) => {",
       "    console.log(functionHere(aElement));",
       "  })",
       "  const endTime = Date.now();",

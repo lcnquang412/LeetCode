@@ -6,3 +6,4 @@ distinct - adj: riêng biệt
 factorial: giai thừa (factorial of zero is 1)
 combination: tổ hợp
 permutation: chỉnh hợp, hoán vị
+clockwise / counterclockwise: cung / nguoc chieu kim dong ho
