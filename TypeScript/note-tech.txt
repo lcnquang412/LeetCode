@@ -28,13 +28,6 @@ const array: number[] = {1,1,2},
 - loop..of => value
 - loop..in => key, index
 
-=== Shape ===
-- area of triangle with 3 points on 2D:
-(1/2) * abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 -y2))
-
-- 3 points on 2D is not in line (or area = 0)
-x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 -y2) === 0
-
 - 3 edges is triangle
 a + b > c
 a + c > b
@@ -106,6 +99,17 @@ array.sort((a, b) => a - b) ==> Ascending
 
 - Permutation (chỉnh hợp) => order is important
   nPr = n! / (n - r)!
+
+=== Shape (2D) ===
+- area of triangle with 3 points on 2D:
+(1/2) * abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 -y2))
+
+- 3 points on 2D is not in line (or area = 0)
+x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 -y2) === 0
+
+- points lie on a line
+  + y = mx + b (slope-intercept form, line crosses the y-axis)
+  + Ax + By + C = 0
 
 === Compare ===
 JSON.parse(JSON.stringify(obj)) > {...obj}
