@@ -60,11 +60,17 @@ array.unshift(a)
 const numbers = [1, 2, 3],
   sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 
-- Remove element
+- [splice] Remove element => Retrieve the array (index, length)
 array.splice(index, number)
 
+- [flat] Array 2D to 1D (left to right) => sub-array elements concatenated into it recursively
+let array_1d = [],
+  array_2d = [[1,2], [3,4]]
+
+  array_1d = array_2d.flat()
+
 - Method executes in place
-sort
+sort, unshift
 
 === a[i] swap a[j] ===
 [a[i], a[j]] = [a[j], a[i]]
