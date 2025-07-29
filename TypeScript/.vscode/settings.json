@@ -2,8 +2,10 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.insertSpaces": false,
-  "cSpell.words": ["nums"] // false = use tabs, true = use spaces
-
+  "cSpell.words": ["nums"], // false = use tabs, true = use spaces
+  "github.copilot.enable": {
+    "*": false
+  }
   // Prettier specific
   // "prettier.tabWidth": 4,
   // "prettier.useTabs": true
