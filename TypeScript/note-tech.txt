@@ -2,6 +2,7 @@
 const map = new Map<string, number>();
 map.set("apple", 3);
 map.set("banana", 5);
+==> Use for get / set only. Recalculate in set is not recommend.
 
 // 🔁 Loop through key-value pairs
 for (const [key, value] of map) {
@@ -21,8 +22,12 @@ for (const value of map.values()) {
 // Map.get(...) => O(n)
 
 === HashMap (Set) from an array ===
+- Get unique elements
 const array: number[] = {1,1,2},
   set = new Set(array);
+
+- Convert Set to Array
+const array: number[] = [...new Set([1,2,1])]
 
 === Loop ===
 - loop..of => value
